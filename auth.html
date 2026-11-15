@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LifeLink | Login & Register</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h2 class="logo">LifeLink</h2>
+        <a href="index.html">Home</a>
+    </nav>
+
+    <main class="auth-page">
+
+        <div class="auth-container">
+
+            <h1>Welcome to LifeLink</h1>
+
+            <p id="authDescription">
+                Create an account to get started.
+            </p>
+
+            <!-- Registration Form -->
+            <form id="registerForm">
+
+                <h2>Create Account</h2>
+
+                <label for="registerName">Full Name</label>
+
+                <input
+                    type="text"
+                    id="registerName"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <label for="registerEmail">Email</label>
+
+                <input
+                    type="email"
+                    id="registerEmail"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <label for="registerPassword">Password</label>
+
+                <input
+                    type="password"
+                    id="registerPassword"
+                    placeholder="At least 6 characters"
+                    minlength="6"
+                    required
+                >
+
+                <button type="submit">
+                    Create Account
+                </button>
+
+            </form>
+
+
+            <!-- Login Form -->
+            <form id="loginForm" hidden>
+
+                <h2>Login</h2>
+
+                <label for="loginEmail">Email</label>
+
+                <input
+                    type="email"
+                    id="loginEmail"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <label for="loginPassword">Password</label>
+
+                <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="Enter your password"
+                    required
+                >
+
+                <button type="submit">
+                    Login
+                </button>
+
+            </form>
+
+
+            <!-- Switch between forms -->
+            <p class="auth-switch" id="authSwitch">
+                Already have an account?
+
+                <button type="button" id="showLogin">
+                    Login
+                </button>
+            </p>
+
+
+            <!-- User session information -->
+            <div id="userSection" hidden>
+
+                <h2>You're logged in!</h2>
+
+                <p id="userInfo"></p>
+
+                <button type="button" id="logoutButton">
+                    Logout
+                </button>
+
+            </div>
+
+
+            <!-- Feedback message -->
+            <p id="authMessage" aria-live="polite"></p>
+
+        </div>
+
+    </main>
+
+
+    <script type="module" src="auth.js"></script>
+
+</body>
+</html>
+

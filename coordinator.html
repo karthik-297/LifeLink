@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Coordinator Dashboard | LifeLink</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h2 class="logo">LifeLink</h2>
+
+        <a href="index.html">Home</a>
+        <a href="request.html">Request Blood</a>
+        <a href="donor-requests.html">Available Requests</a>
+    </nav>
+
+
+    <main class="coordinator-page">
+
+        <header class="coordinator-heading">
+            <h1>Coordinator Dashboard</h1>
+            <p>Review and manage submitted demo requests.</p>
+        </header>
+
+
+        <!-- Statistics -->
+        <section class="coordinator-stats">
+
+            <div class="stat-card">
+                <h3>Total Requests</h3>
+                <p id="totalCount">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Pending</h3>
+                <p id="pendingCount">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Verified</h3>
+                <p id="verifiedCount">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Rejected</h3>
+                <p id="rejectedCount">0</p>
+            </div>
+
+        </section>
+
+
+        <!-- Incoming Requests -->
+        <section class="coordinator-list">
+
+            <div class="list-heading">
+                <h2>Incoming Requests</h2>
+
+                <button type="button" id="refreshButton">
+                    Refresh
+                </button>
+            </div>
+
+            <div id="requestList">
+                <p>Loading requests...</p>
+            </div>
+
+        </section>
+
+
+        <!-- Donor Responses -->
+        <section class="coordinator-list">
+
+            <div class="list-heading">
+                <h2>Donor Responses</h2>
+            </div>
+
+            <div id="donorResponseList">
+                <p>Loading donor responses...</p>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script type="module" src="coordinator-firestore.js"></script>
+
+</body>
+</html>

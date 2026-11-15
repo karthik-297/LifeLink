@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Request | LifeLink</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h2 class="logo">LifeLink</h2>
+        <a href="index.html">Home</a>
+        <a href="request.html">Request Blood</a>
+    </nav>
+
+    <main class="coordinator-page">
+
+        <header class="coordinator-heading">
+            <h1>Track Your Request</h1>
+            <p>Monitor the status of your submitted requests.</p>
+        </header>
+
+        <section class="coordinator-list">
+            <div class="list-heading">
+                <h2>My Blood Requests</h2>
+                <p>Track verification and donor responses in one place.</p>
+                <button type="button" id="refreshButton">
+                    Refresh
+                </button>
+            </div>
+
+            <p id="trackingMessage">Loading your requests...</p>
+
+            <div id="myRequestList"></div>
+            <section class="coordinator-list">
+    <h2>Notifications</h2>
+    <p id="notificationMessage">
+        Loading notifications...
+    </p>
+    <div id="notificationList"></div>
+</section>
+
+            <div id="donorResponseList"></div>
+        </section>
+
+    </main>
+
+    <script type="module" src="track-request.js"></script>
+
+</body>
+</html>

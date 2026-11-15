@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LifeLink | Donor Registration</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Life<span>Link</span></h2>
+            <a href="index.html">Back to Home</a>
+            <a href="donor-requests.html">Available Requests</a>
+        </nav>
+    </header>
+
+    <main class="registration">
+
+        <div class="form-container">
+
+            <p class="tagline">BECOME A PART OF LIFELINK</p>
+
+            <h1>Donor Registration</h1>
+
+            <p class="form-description">
+                Create your demonstration donor profile.
+            </p>
+
+            <form id="donorForm">
+
+                <label for="name">Full Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="example@email.com"
+                    required
+                >
+
+                <label for="bloodGroup">Blood Group</label>
+
+                <select id="bloodGroup" required>
+                    <option value="">Select Blood Group</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                </select>
+
+                <label for="area">Service Area</label>
+                <input
+                    type="text"
+                    id="area"
+                    placeholder="Enter your city or area"
+                    required
+                >
+
+                <label for="availability">Availability</label>
+
+                <select id="availability" required>
+                    <option value="">Select Availability</option>
+                    <option value="Available">Available</option>
+                    <option value="Unavailable">Unavailable</option>
+                </select>
+
+                <div class="consent">
+                    <input type="checkbox" id="consent" required>
+
+                    <label for="consent">
+                        I agree to participate in this demonstration.
+                    </label>
+                </div>
+
+                <button type="submit" class="primary-btn">
+                    Create Donor Profile
+                </button>
+
+                <p id="message"></p>
+
+            </form>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
