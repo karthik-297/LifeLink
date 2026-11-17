@@ -7,105 +7,260 @@
     <title>LifeLink | Blood Donation Network</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header>
+    <!-- NAVIGATION -->
+    <header class="site-header">
         <nav class="navbar">
-            <h2 class="logo">Life<span>Link</span></h2>
+
+            <a href="#home" class="brand" aria-label="LifeLink home">
+                <span class="brand-icon">♥</span>
+                <span class="logo">Life<span>Link</span></span>
+            </a>
 
             <div class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#features">Features</a>
+                <a href="#home" class="active">Home</a>
                 <a href="#about">About</a>
-                <a href="coordinator.html">
-    Coordinator Dashboard
-</a>
-<a href="auth.html">Login / Register</a>
+                <a href="#features">How It Works</a>
+                <a href="track-request.html">Track Request</a>
             </div>
 
-            <a href="#features" class="nav-btn">Get Started</a>
+            <a href="auth.html" class="nav-btn">↪ Login</a>
+
         </nav>
     </header>
 
+
     <main>
+
+        <!-- HERO SECTION -->
         <section class="hero" id="home">
+
             <div class="hero-content">
-                <p class="tagline">CONNECTING LIVES THROUGH DONATION</p>
 
-                <h1>
-                    Every Drop<br>
-                    <span>Connects Lives.</span>
-                </h1>
-
-                <p class="description">
-                    A smarter way to connect blood donors,
-                    coordinators and people in need.
-                    Together, we make every connection count.
+                <p class="tagline">
+                    DONATE • REQUEST • SAVE LIVES
                 </p>
 
-                <a href="request.html" class="primary-btn">
-                    Request Blood →
-                </a>
+                <h1>Life<span>Link</span></h1>
+
+                <h2 class="hero-subtitle">
+                    Because every drop counts.
+                </h2>
+
+                <p class="description">
+                    Connect with verified donors and help save lives
+                    through a simple and trusted platform.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="donor.html" class="primary-btn">
+                        ♥ Donate Blood →
+                    </a>
+
+                    <a href="request.html" class="secondary-btn">
+                        Request Blood →
+                    </a>
+
+                </div>
+
             </div>
 
+
+            <!-- HERO ILLUSTRATION -->
             <div class="hero-visual">
-                <div class="blood-icon">♥</div>
-                <h2>Give Blood.<br>Share Hope.</h2>
-                <p>One connection can make a difference.</p>
+
+                <div class="hero-glow"></div>
+
+                <div class="hero-drop"></div>
+
+                <div class="hero-cross"></div>
+
+                <div class="hero-heart">♡</div>
+
+                <div class="hero-message">
+                    Give Blood.<br>
+                    Give Hope.
+                </div>
+
+                <div class="hero-hand"></div>
+
             </div>
+
         </section>
 
-        
-<section class="features" id="features">
-    <p class="tagline">OUR PLATFORM</p>
-    <h2>One platform. Three experiences.</h2>
 
-    <div class="cards">
+        <!-- FEATURES SECTION -->
+        <section class="features" id="features">
 
-        <!-- DONOR CARD -->
-        <div class="card" id="donor">
-            <div class="card-icon">♥</div>
-            <h3>Donor</h3>
-            <p>Manage your donor profile,
-            availability and invitations.</p>
-            <a href="donor.html">Explore Donor →</a>
-        </div>
+            <div class="cards">
 
-        <!-- REQUESTER CARD -->
-        <div class="card" id="requester">
-            <div class="card-icon">✚</div>
-            <h3>Requester</h3>
-            <p>Submit blood requests and
-            follow verified progress.</p>
-            <a href="request.html">Explore Requests →</a>
-        </div>
+                <!-- DONOR CARD -->
+                <div class="card" id="donor">
 
-        <!-- COORDINATOR CARD -->
-        <div class="card" id="coordinator">
-            <div class="card-icon">☑</div>
-            <h3>Coordinator</h3>
-            <p>Verify requests, manage
-            invitations and track responses.</p>
-            <a href="coordinator.html">Explore Dashboard →</a>
-        </div>
+                    <div class="card-icon">♥</div>
 
-    </div>
-</section>
+                    <div class="card-content">
+                        <h3>For Donors</h3>
+
+                        <p>
+                            Register as a donor and help those in need.
+                        </p>
+
+                        <a href="donor.html">
+                            Explore Donor →
+                        </a>
+                    </div>
+
+                    <a href="donor.html" class="card-arrow"
+                       aria-label="Explore donor page">→</a>
+
+                </div>
 
 
+                <!-- REQUESTER CARD -->
+                <div class="card" id="requester">
+
+                    <div class="card-icon">♟</div>
+
+                    <div class="card-content">
+                        <h3>For Requesters</h3>
+
+                        <p>
+                            Request blood quickly and reliably.
+                        </p>
+
+                        <a href="request.html">
+                            Explore Requests →
+                        </a>
+                    </div>
+
+                    <a href="request.html" class="card-arrow"
+                       aria-label="Explore requests">→</a>
+
+                </div>
+
+
+                <!-- COORDINATOR CARD -->
+                <div class="card" id="coordinator">
+
+                    <div class="card-icon">✓</div>
+
+                    <div class="card-content">
+                        <h3>For Coordinators</h3>
+
+                        <p>
+                            Verify requests and connect donors with patients.
+                        </p>
+
+                        <a href="coordinator.html">
+                            Explore Dashboard →
+                        </a>
+                    </div>
+
+                    <a href="coordinator.html" class="card-arrow"
+                       aria-label="Explore coordinator dashboard">→</a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT SECTION -->
         <section class="about" id="about">
-            <h2>Making connections simpler.</h2>
-            <p>
-                LifeLink brings requests, donor availability,
-                consent and responses into one coordinated platform.
-            </p>
+
+            <div class="about-illustration">
+
+                <div class="blood-bag">
+                    <div class="bag-handle"></div>
+
+                    <div class="bag-liquid">
+                        <span>+</span>
+                    </div>
+
+                    <div class="bag-tube"></div>
+                </div>
+
+                <div class="about-heart">♡</div>
+
+            </div>
+
+
+            <div class="about-content">
+
+                <p class="section-label">
+                    ABOUT LIFELINK
+                </p>
+
+                <h2>
+                    A Smarter Way to Bridge the Blood Gap
+                </h2>
+
+                <p>
+                    LifeLink is a community-driven platform that connects
+                    blood donors, requesters and coordinators — making
+                    blood donation easier, faster and more reliable
+                    for everyone.
+                </p>
+
+            </div>
+
+
+            <div class="benefits-panel">
+
+                <div class="benefit">
+                    <span class="benefit-icon">♥</span>
+
+                    <div>
+                        <h3>Save Lives</h3>
+                        <p>Be the reason someone lives.</p>
+                    </div>
+                </div>
+
+
+                <div class="benefit">
+                    <span class="benefit-icon">♟</span>
+
+                    <div>
+                        <h3>Build Community</h3>
+                        <p>Together, we can do more.</p>
+                    </div>
+                </div>
+
+
+                <div class="benefit">
+                    <span class="benefit-icon">◷</span>
+
+                    <div>
+                        <h3>Fast &amp; Reliable</h3>
+                        <p>Real-time connections.</p>
+                    </div>
+                </div>
+
+            </div>
+
         </section>
+
     </main>
 
-    <footer>
-        <p>© 2026 LifeLink | Connecting Lives, One Donation at a Time.</p>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <p>
+            © 2026 LifeLink | Connecting Lives,
+            One Donation at a Time.
+        </p>
+
     </footer>
 
+
+    <!-- EXISTING JAVASCRIPT -->
     <script src="script.js"></script>
+
 </body>
 </html>
